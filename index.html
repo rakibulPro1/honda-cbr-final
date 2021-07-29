@@ -22,6 +22,34 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- modal purchease in top  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Purchase Now</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="col-form-label">Your Email:</label>
+                <input type="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer d-flex justify-content-center">
+            
+            <button type="button" class="btn-orange border-0">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- header  -->
     <header class="header-bg">
         <!-- navbar  -->
@@ -35,9 +63,9 @@
                   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto py-3">
                       <a class="nav-link active" aria-current="page" href="#">Home</a>
-                      <a class="nav-link text-white" href="#">Shop</a>
-                      <a class="nav-link text-white" href="#">News</a>
-                      <a class="nav-link text-white" href="#">Contact</a>
+                      <a class="nav-link text-white" href="#shop">Shop</a>
+                      <a class="nav-link text-white" href="#brand">Brand</a>
+                      <a class="nav-link text-white" href="#contact">Contact</a>
                       
                       <a href="#" class="btn-orange text-center">Login</a>
                     </div>
@@ -51,7 +79,7 @@
                     <h1>Honda CBR 300R</h1>
                     <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
 
-                    <a href="#" class="btn-orange ">Purchase</a>
+                    <a href="#" class="btn-orange" data-bs-toggle="modal" data-bs-target="#exampleModal">Purchase</a>
                 </div>
                 <div class="col-12 col-md-12 col-lg-6 text-white d-flex justify-content-center">
                     <img src="images/header-bike.png" class="img-fluid" alt="">
@@ -64,7 +92,7 @@
     <!-- main  -->
     <main>
       <!-- featured bikes -->
-      <section class="container mt-5 featured-section">
+      <section id="shop" class="container  featured-section mt-5">
         <div class="text-center">
           <h1 class="featured-head-title">Fetured Bikes 2021</h1>
           <p><small class="featured-head-para">Best Bike Collection</small></p>
@@ -84,7 +112,7 @@
       </section>
 
       <!-- client section  -->
-      <section class="container client-section my-5">
+      <section class="container client-section mt-5">
         <h2 class="text-center"><span style="color: #0A0826;">Happy </span><span style="color: #E76F51;">Client Says</span></h2>
 
         <div class="row my-5 gx-5 gy-4">
@@ -145,8 +173,34 @@
         </div>
       </section>
 
+      <!-- brand section  -->
+      <section id="brand" class="container brand-section" style="margin-top: 100px;">
+        <h2 class="text-center"><span style="color: #0A0826;">Choose Honda </span><span style="color: #E76F51;">Brand</span></h2>
+
+        <div class="row mt-5">
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/komaki.png" alt="">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/suzuki.png" alt="">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/hero.png" alt="">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/moto-guzzi.png" alt="">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/mahindra.png" alt="">
+          </div>
+          <div class="col-6 col-md-4 col-lg-2 honda-brand">
+            <img src="images/honda_brand/tvs.png" alt="">
+          </div>
+        </div>
+      </section>
+
       <!-- questions section  -->
-      <section class="container question-section my-5">
+      <section class="container question-section" style="margin-top: 100px;">
         <h2 class="text-center"><span style="color: #0A0826;">Freequently Asked </span><span style="color: #E76F51;">Questions</span></h2>
 
         <div class="row mt-5 gx-5">
@@ -231,9 +285,83 @@
 
         </div>
       </section>
-    </main>
-    <footer>
 
+      <!-- contact section  -->
+
+      <section id="contact">
+        <div class="container px-2">
+            <div class="row my-5">
+                <div class="col-12 px-4">
+                  <h2 class="text-center contact-head"><span style="color: #0A0826;">Contact </span><span style="color: #E76F51;">Us</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 text-center">
+                    <div class="info-box mb-4">
+                      <i class="bx bx-map"></i>
+                      <h3>Our Address</h3>
+                      <p>A108 Adam Street, New York, NY 535022</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="info-box  mb-4">
+                      <i class="bx bx-envelope"></i>
+                      <h3>Email Us</h3>
+                      <p>rakibul102760@gmail.com</p>
+                    </div>
+                  </div>
+        
+                  <div class="col-lg-3 col-md-6 text-center">
+                    <div class="info-box  mb-4">
+                      <i class="bx bx-phone-call"></i>
+                      <h3>Call Us</h3>
+                      <p>01851258931</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="row mt-3">
+
+                <div class="col-lg-6 ">
+                  <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                </div>
+      
+                <div class="col-lg-6">
+                  <form>
+                    <div class="row">
+                      <div class="col-md-6 form-group mb-3">
+                        <input type="text" placeholder="Enter your name"  class="form-control"/>
+                        
+                      </div>
+                      <div class="col-md-6 form-group mb-3">
+                        <input type="email" placeholder="Enter your email" class="form-control">
+                      </div>
+                    </div>
+                    
+                    <div class="form-group mb-3">
+                      <input type="text" placeholder="Subject" class="form-control">
+                    </div>
+                    <div class="form-group mb-3">
+                      <textarea class="form-control" rows="8" placeholder="Message"></textarea>
+                    </div>
+                  
+                    <div class="text-center">
+                      <button type="submit" class="btn-orange border-0">Send Message</button>
+                    </div>
+                  </form>
+                </div>
+      
+              </div>
+        </div>
+      </section>
+
+
+    </main>
+
+
+
+    <footer class="text-center px-2 mt-5">
+      <p style="font-size: 15px;">Copyright @2021--Rakib--Honda CBR</p>
     </footer>
 
 

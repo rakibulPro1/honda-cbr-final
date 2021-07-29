@@ -8,6 +8,7 @@ body{
   
 }
 
+
 /* header style  */
 .header-bg{
     background-color: #264653;
@@ -40,7 +41,7 @@ body{
 }
 
 /* client style  */
-.client-section h2, .question-section h2{
+.client-section h2, .question-section h2, .brand-section h2, .contact-head{
     font-size: 33px;
     font-weight: 700;
 }
@@ -74,3 +75,41 @@ body{
     line-height: 28px;
     color: #7E848C;
 }
+
+/* contact us */
+#countup{
+    min-height: 30vh;
+    background-color: #622ac1;
+}
+#countup h1{
+    font-weight: bold;
+}
+.service-box{
+    padding: 30px;
+    box-shadow: 1px 3px 8px -1px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
+}
+#pricing .btn{
+    color: white;
+    border: none;
+    background-color: #622ac1;
+}
+.price-box{
+    box-shadow: 1px 3px 8px -1px rgba(0,0,0,0.4);
+}
+.price-box h5{
+    opacity: 0.8;
+}
+.price-heading{
+    padding: 10px 10px;
+    background-color: rgb(250, 241, 241);
+}
+#contact .info-box {
+    padding: 30px;
+    box-shadow: 1px 3px 8px -1px rgba(0,0,0,0.2);
+    transition: 0.5s ease;
+}
+
+
+
+
